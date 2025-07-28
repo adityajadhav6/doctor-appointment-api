@@ -54,13 +54,13 @@ A simple RESTful API built with Flask and Docker to manage doctor listings and p
 | GET    | `/appointments?patient_id=99` | View appointments for a patient |
 
 ## Sample json for booking appointment
-- {
--  "date": "2025-07-28",
--  "time": "11:00",
--  "doctor_id": 1,
--  "patient_id": 101
--}
+{
+  "date": "2025-07-28",
+  "time": "11:00",
+  "doctor_id": 1,
+  "patient_id": 101
+}
 
 ## 📌 Notes
-- SQLite file (database.db) is re-initialized every time app.py runs.
+- SQLite file (models/db.py) is re-initialized every time app.py runs.
 - Docker build runs with this fresh database as well.
