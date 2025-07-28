@@ -38,6 +38,8 @@ def reset_init_db():
                    ("Dr. Smith", "Cardiologist", "10am-4pm"))
     cursor.execute('INSERT INTO doctors (name, specialization, timings) VALUES (?, ?, ?)', 
                    ("Dr. Jane", "Dermatologist", "12pm-6pm"))
+    cursor.execute('INSERT INTO doctors (name, specialization, timings) VALUES (?, ?, ?)',
+                   ("Dr. Bharath", "Child Specalist", "10:30am-6pm"))
 
     conn.commit()
     conn.close()
